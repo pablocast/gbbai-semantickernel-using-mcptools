@@ -24,16 +24,16 @@
 2. **Create the infrastructure**
 This sample uses [`azd`](https://learn.microsoft.com/azure/developer/azure-developer-cli/) and a bicep template to deploy all Azure resources, including Azure AI Search. 
 
-- Login to your Azure account: `azd auth login`
+    - Login to your Azure account: `azd auth login`
 
-- Create an environment: `azd env new`
+    - Create an environment: `azd env new`
 
-- Run `azd up`.
+    - Run `azd up`.
 
-   + Choose your Azure subscription.
-   + Enter a region for the resources.
+    + Choose your Azure subscription.
+    + Enter a region for the resources.
 
-   The deployment creates multiple Azure resources and runs multiple jobs. It takes several minutes to complete. The deployment is complete when you get a command line notification stating "SUCCESS: Your up workflow to provision and deploy to Azure completed."
+    The deployment creates multiple Azure resources and runs multiple jobs. It takes several minutes to complete. The deployment is complete when you get a command line notification stating "SUCCESS: Your up workflow to provision and deploy to Azure completed."
 
 3. **Running the Notebook with the Orchestrator**
 Open the notebook [orchestrator-model-context-protocol](notebooks/) and execute it to see the orchestrator in action.
