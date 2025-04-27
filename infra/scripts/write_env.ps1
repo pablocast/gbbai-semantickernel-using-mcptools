@@ -7,8 +7,8 @@ If (Test-Path $envFilePath) {
 }
 New-Item -Path $envFilePath -ItemType File -Force | Out-Null
 
-Add-Content -Path $envFilePath -Value ("APIM_RESOURCE_GATEWAY_URL=" + (azd env get-value PROJECT_CONNECTION_STRING))
-Add-Content -Path $envFilePath -Value ("APIM_SUBSCRIPTION_KEY=" + (azd env get-value AZURE_SEARCH_ENDPOINT))
-Add-Content -Path $envFilePath -Value ("AZURE_OPENAI_API_VERSION=" + (azd env get-value AZURE_STORAGE_CONNECTION_STRING))
-Add-Content -Path $envFilePath -Value ("AZURE_OPENAI_DEPLOYMENT_NAME=" + (azd env get-value AZURE_OPENAI_ENDPOINT))
+Add-Content -Path $envFilePath -Value ("APIM_RESOURCE_GATEWAY_URL=" + (azd env get-value apimResourceGatewayURL))
+Add-Content -Path $envFilePath -Value ("APIM_SUBSCRIPTION_KEY=" + (azd env get-value apimSubscriptionKey))
+Add-Content -Path $envFilePath -Value ("AZURE_OPENAI_API_VERSION=" + (azd env get-value openAIAPIVersion))
+Add-Content -Path $envFilePath -Value ("AZURE_OPENAI_DEPLOYMENT_NAME=" + (azd env get-value openAIModelName))
 

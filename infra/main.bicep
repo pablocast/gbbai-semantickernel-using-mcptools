@@ -117,7 +117,7 @@ resource weatherMCPServerContainerApp 'Microsoft.App/containerApps@2023-11-02-pr
       '${containerAppUAI.id}': {}
     }
   }
-  tags: union(tags, { 'azd-service-name': 'weather-mcp'})
+  tags: union(tags, { 'azd-service-name': 'weather-mcp-server'})
   properties: {
     managedEnvironmentId: containerAppEnv.id
     configuration: {
@@ -160,7 +160,7 @@ resource agentMCPServerContainerApp 'Microsoft.App/containerApps@2023-11-02-prev
       '${containerAppUAI.id}': {}
     }
   }
-  tags: union(tags, { 'azd-service-name': 'agent-mcp'})
+  tags: union(tags, { 'azd-service-name': 'agent-mcp-server'})
   properties: {
     managedEnvironmentId: containerAppEnv.id
     configuration: {
@@ -295,11 +295,7 @@ module openAIAPIModule './modules/apim/openai-api.bicep' = {
 resource api 'Microsoft.ApiManagement/service/apis@2024-06-01-preview' existing = {
   parent: apimService
   name: openAIAPIName
-  dependsOn: [
-    openAIAPIModule
-  ]
 }
-
 
 module weatherAPIModule './modules/apim/weather/api.bicep' = {
   name: 'weatherAPIModule'
