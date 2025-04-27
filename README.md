@@ -1,4 +1,4 @@
-# <img src="./utils/media/azure_logo.png" alt="Azure Foundry" style="width:60px;height:60px;"/> Semantic Kernel Agent Orchestrator using MCP Tools via Azure API Management
+# <img src="./utils/media/azure_logo.png" alt="Azure Foundry" style="width:30px;height:30px;"/> Semantic Kernel Agent Orchestrator using MCP Tools via Azure API Management
 
  Model Context Protocol with Azure API Management to enable plug & play of
  tools to LLMs
