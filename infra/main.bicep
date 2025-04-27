@@ -368,3 +368,5 @@ output apimResourceGatewayURL string = apimService.properties.gatewayUrl
 #disable-next-line outputs-should-not-contain-secrets
 output apimSubscriptionKey string = apimSubscription.listSecrets().primaryKey
 output AZURE_CONTAINER_REGISTRY_ENDPOINT string = containerRegistry.properties.loginServer
+output openAIAPIVersion string = openAIAPIVersion
+output openAIModelName string = openAIModelName
