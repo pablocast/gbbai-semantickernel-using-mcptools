@@ -1,7 +1,7 @@
 version: "3.8"
 services:
   mcp-server:
-    image: agent:latest
+    image: agent-mcp:latest
     ports:
       - "8080:8080"
     env_file:

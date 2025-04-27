@@ -3,4 +3,4 @@ services:
   mcp-server:
     image: weather-mcp:latest
     ports:
-      - "8080:8080"
+      - "8081:8080"
