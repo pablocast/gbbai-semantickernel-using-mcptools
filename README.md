@@ -12,6 +12,10 @@
 +  [Sign in to Azure with Azure CLI](https://learn.microsoft.com/cli/azure/authenticate-azure-cli-interactively)
 +  [VS Code](https://code.visualstudio.com/) installed with the [Jupyter notebook extension](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter) enabled
 
+## Architecture
+![flow](utils/media/model-context-protocol.gif)
+
+
 ## Instructions
 
 1. **Python Environment Setup** <br>
