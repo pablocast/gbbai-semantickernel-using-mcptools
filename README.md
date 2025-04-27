@@ -14,14 +14,14 @@
 
 ## Instructions
 
-1. **Python Environment Setup**
+1. **Python Environment Setup** <br>
    ```bash
    python3.11 -m venv .venv
    source .venv/bin/activate  # On Windows: .venv\Scripts\activate
    pip install -r requirements.txt
    ```
 
-2. **Create the infrastructure**
+2. **Create the infrastructure** <br>
 This sample uses [`azd`](https://learn.microsoft.com/azure/developer/azure-developer-cli/) and a bicep template to deploy all Azure resources, including Azure AI Search. 
 
     - Login to your Azure account: `azd auth login`
@@ -35,8 +35,8 @@ This sample uses [`azd`](https://learn.microsoft.com/azure/developer/azure-devel
 
     The deployment creates multiple Azure resources and runs multiple jobs. It takes several minutes to complete. The deployment is complete when you get a command line notification stating "SUCCESS: Your up workflow to provision and deploy to Azure completed."
 
-3. **Running the Notebook with the Orchestrator**
+3. **Running the Notebook with the Orchestrator** <br>
 Open the notebook [orchestrator-model-context-protocol](notebooks/) and execute it to see the orchestrator in action.
 
-4. **Delete the Resources**
+4. **Delete the Resources** <br>
 You can delete the infrastruture created before by using `azd down --purge`
