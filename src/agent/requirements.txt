@@ -1,0 +1,12 @@
+anyio==4.8.0
+azure.identity==1.21.0
+python-dotenv==1.0.1
+semantic-kernel==1.28.1
+semantic-kernel[mcp]
+nest-asyncio~=1.6
+typing_extensions==4.12.2
+uvicorn==0.34.0
+sse-starlette==2.2.1
+starlette==0.46.0
+mcp~=1.6
+

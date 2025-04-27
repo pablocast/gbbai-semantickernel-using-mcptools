@@ -1,0 +1,13 @@
+# Azure SDK and AI Services
+azure.identity==1.21.0
+
+# Jupyter and Development Tools
+jupyter                                      
+notebook                                     
+ipykernel                                   
+python-dotenv==1.0.1
+
+# Semantic Kernel and MCP protocol
+semantic-kernel==1.28.1
+semantic-kernel[mcp]
+mcp~=1.6

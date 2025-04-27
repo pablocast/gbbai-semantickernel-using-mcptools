@@ -1,0 +1,20 @@
+name: azure-semantic-kernel-mcp
+metadata:
+  template: azure-semantic-kernel-mcp
+services:
+  weather-mcp-server: 
+    project: ./src/webapp
+    host: containerapp
+    language: python
+    docker:
+      path: Dockerfile
+      context: .
+      remoteBuild: true
+  agent-mcp-server:
+    project: ./src/app
+    host: containerapp
+    language: python
+    docker:
+      path: Dockerfile
+      context: .
+      remoteBuild: true
