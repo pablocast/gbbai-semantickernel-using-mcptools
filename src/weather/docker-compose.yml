@@ -1,0 +1,6 @@
+version: "3.8"
+services:
+  mcp-server:
+    image: weather-mcp:latest
+    ports:
+      - "8080:8080"

@@ -80,7 +80,7 @@ def create_starlette_app(debug: bool = False) -> Starlette:
     
     server = agent.as_mcp_server()
 
-    sse = SseServerTransport("/messages/")
+    sse = SseServerTransport("/agent/messages/")
 
     async def handle_sse(request):
         async with sse.connect_sse(request.scope, request.receive, request._send) as (
