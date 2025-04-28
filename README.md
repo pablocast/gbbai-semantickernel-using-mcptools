@@ -15,6 +15,7 @@
 ## Architecture
 ![flow](utils/media/model-context-protocol.gif)
 
+- Model Context Protocol servers runing behind with Azure API Management to enable plug & play of tools to LLMs.
 
 ## Instructions
 
