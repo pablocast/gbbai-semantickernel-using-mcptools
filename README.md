@@ -15,7 +15,7 @@
 ## Architecture
 ![flow](utils/media/model-context-protocol.gif)
 
-- Model Context Protocol servers runing behind with Azure API Management to enable plug & play of tools to LLMs. The API Management can ensure end-to-end authentication and authorization, using [credential manager](https://learn.microsoft.com/en-us/azure/api-management/credentials-overview) manager for managing OAuth 2.0 tokens to backend tools and [client token validation](https://learn.microsoft.com/en-us/azure/api-management/validate-jwt-policy). 
+- Model Context Protocol servers runing behind with Azure API Management to enable plug & play of tools to LLMs. The API Management can ensure end-to-end authentication and authorization, using [credential manager](https://learn.microsoft.com/en-us/azure/api-management/credentials-overview) manager for managing OAuth 2.0 tokens to backend tools and [client token validation](https://learn.microsoft.com/en-us/azure/api-management/validate-jwt-policy) [TO BE IMPLEMENTED]. 
 
 ## Instructions
 
